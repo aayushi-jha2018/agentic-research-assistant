@@ -1,0 +1,102 @@
+[
+  {
+    "question": "How many days per week can employees work remotely?",
+    "expected_tool": "doc_search",
+    "expected_keyword": "four days"
+  },
+  {
+    "question": "How many days do I have to submit an expense report?",
+    "expected_tool": "doc_search",
+    "expected_keyword": "30 days"
+  },
+  {
+    "question": "How many PTO days do full-time employees accrue per year?",
+    "expected_tool": "doc_search",
+    "expected_keyword": "20 days"
+  },
+  {
+    "question": "What is the price of the Standing Desk?",
+    "expected_tool": "sql_lookup",
+    "expected_keyword": "249.99"
+  },
+  {
+    "question": "How many units of Widget A are in stock?",
+    "expected_tool": "sql_lookup",
+    "expected_keyword": "340"
+  },
+  {
+    "question": "How much does the Office Chair cost?",
+    "expected_tool": "sql_lookup",
+    "expected_keyword": "159.50"
+  },
+  {
+    "question": "What is 45 + 78?",
+    "expected_tool": "calculator",
+    "expected_keyword": "123"
+  },
+  {
+    "question": "Calculate 100 - 37",
+    "expected_tool": "calculator",
+    "expected_keyword": "63"
+  },
+  {
+    "question": "What is 12 * 8?",
+    "expected_tool": "calculator",
+    "expected_keyword": "96"
+  },
+  {
+    "question": "What is 144 / 12?",
+    "expected_tool": "calculator",
+    "expected_keyword": "12.0"
+  },
+  {
+    "question": "Can I carry over unused PTO days?",
+    "expected_tool": "doc_search",
+    "expected_keyword": "carried over"
+  },
+  {
+    "question": "What is the meal reimbursement limit during travel?",
+    "expected_tool": "doc_search",
+    "expected_keyword": "$75"
+  },
+  {
+    "question": "What happens to my company laptop if I leave?",
+    "expected_tool": "doc_search",
+    "expected_keyword": "returned"
+  },
+  {
+    "question": "What is the stock level of the Wireless Mouse?",
+    "expected_tool": "sql_lookup",
+    "expected_keyword": "500"
+  },
+  {
+    "question": "How many Desk Lamps are in stock?",
+    "expected_tool": "sql_lookup",
+    "expected_keyword": "275"
+  },
+  {
+    "question": "What is 9 + 16?",
+    "expected_tool": "calculator",
+    "expected_keyword": "25"
+  },
+  {
+    "question": "What category is the Laptop Stand in?",
+    "expected_tool": "sql_lookup",
+    "expected_keyword": "Accessories"
+  },
+  {
+    "question": "What is the price for booking premium economy airfare?",
+    "expected_tool": "doc_search",
+    "expected_keyword": "premium economy"
+  },
+  {
+    "question": "How far in advance must I request PTO for a long absence?",
+    "expected_tool": "doc_search",
+    "expected_keyword": "two weeks"
+  },
+  {
+    "question": "What is the price of the Noise-Cancelling Headphones?",
+    "expected_tool": "sql_lookup",
+    "expected_keyword": "89.99"
+  }
+]
