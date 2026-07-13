@@ -28,7 +28,7 @@ _OPS = {
     ast.USub: operator.neg,
 }
 
-_EXPRESSION_RE = re.compile(r"[-+*/().ds]{3,}")
+_EXPRESSION_RE = re.compile(r"[-+*/().0-9\s]{3,}")
 
 
 def _eval_node(node):
@@ -113,7 +113,7 @@ def doc_search_tool(query: str) -> str:
     query_terms = set(_tokenize(query))
     best_doc, best_score, best_sentence = None, 0, None
     for fname, text in _load_docs().items():
-        sentences = re.split(r"(?<=[.!?])s+", text.strip())
+        sentences = re.split(r"(?<=[.!?])\s+", text.strip())
         for sentence in sentences:
             score = len(query_terms & set(_tokenize(sentence)))
             if score > best_score:
